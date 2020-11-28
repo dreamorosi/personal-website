@@ -10,12 +10,12 @@ const NameContainer = styled.h1`
   padding: 0;
   line-height: 5.5rem;
   perspective: 500px;
+  transform: rotate3d(0, 0, 0, 0);
+  transform-style: preserve-3d;
   &:hover > span:first-child{
-    transform-style: preserve-3d;
     transform: rotateY(15deg) rotateX(-20deg) rotateZ(-15deg);
   }
   &:hover > span:last-child{
-    transform-style: preserve-3d;
     transform: rotateY(-15deg) rotateX(20deg);
   }
   @media (min-width: 700px) {
